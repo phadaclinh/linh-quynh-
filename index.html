@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lễ Cưới: Đắc Linh & Ngọc Quỳnh</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #d4a373; 
+            --text-color: #4a4a4a;
+            --bg-color: #fffaf5;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                        url('https://github.com/phadaclinh/linh-quynh-/blob/main/MEITU_20250501_014343821.jpg?raw=true'); 
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 5rem;
+            margin: 10px 0;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            font-weight: 300;
+        }
+
+        section {
+            padding: 80px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 40px;
+        }
+
+        .info-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .info-box {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        .info-box h3 {
+            font-family: 'Playfair Display', serif;
+            border-bottom: 1px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .gallery-grid img:hover {
+            transform: scale(1.02);
+        }
+
+        .bank-info {
+            background: #fdf2e9;
+            padding: 60px 20px;
+            border-radius: 15px;
+        }
+
+        .bank-card {
+            margin-top: 20px;
+            border: 1px dashed var(--primary-color);
+            padding: 25px;
+            display: inline-block;
+            border-radius: 10px;
+            background: white;
+            min-width: 300px;
+        }
+
+        .qr-code {
+            width: 220px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .info-container { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 3.5rem; }
+            .gallery-grid img { height: 350px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <p>Save The Date</p>
+        <h1>Đắc Linh & Ngọc Quỳnh</h1>
+        <p>27 . 01 . 2026</p>
+    </header>
+
+    <section>
+        <h2>Lời Ngỏ</h2>
+        <p style="font-style: italic; font-size: 1.1rem; max-width: 700px; margin: 0 auto;">
+            "Hành trình hạnh phúc nhất không phải là đi đâu, <br>
+            mà là được đi cùng ai. Cảm ơn bạn đã là một phần trong ngày trọng đại của chúng mình."
+        </p>
+    </section>
+
+    <section id="info">
+        <h2>Sự Kiện Cưới</h2>
+        <div class="info-container">
+            <div class="info-box">
+                <h3>Tiệc Cưới</h3>
+                <p><strong>15:00 - 27/01/2026</strong></p>
+                <p>Tại Trung tâm Hội nghị</p>
+                <p>123 phố Trà 1, phường Vĩnh Yên, Tỉnh Phú Thọ</p>
+            </div>
+            <div class="info-box">
+                <h3>Lễ Thành Hôn</h3>
+                <p><strong>09:00 AM - 28/01/2026</strong></p>
+                <p>Tại Tư gia</p>
+                <p>123 phố Trà 1, phường Vĩnh Yên, Tỉnh Phú Thọ</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Album Hình Cưới</h2>
+        <div class="gallery-grid">
+            <img src="https://github.com/phadaclinh/linh-quynh-/blob/main/MEITU_20250501_014343821.jpg?raw=true" alt="Wedding 1">
+            <img src="https://github.com/phadaclinh/linh-quynh-/blob/main/MEITU_20250202_231931342~2.jpg?raw=true" alt="Wedding 2">
+            <img src="https://github.com/phadaclinh/linh-quynh-/blob/main/MEITU_20250202_231701325.jpg?raw=true" alt="Wedding 3">
+        </div>
+    </section>
+
+    <section class="bank-info">
+        <h2>Gửi Lời Chúc & Quà Tặng</h2>
+        <p>Sự hiện diện của bạn là niềm hạnh phúc lớn nhất của chúng mình.</p>
+        <div class="bank-card">
+            <img class="qr-code" src="https://img.vietqr.io/image/vietcombank-1016613245-compact2.jpg?addTag=true&accountName=PHAN%20DAC%20LINH" alt="QR Code">
+            <p style="margin: 5px 0; color: var(--primary-color); font-weight: 600;">MỪNG HẠNH PHÚC</p>
+            <hr style="border: 0; border-top: 1px solid #eee; margin: 15px 0;">
+            <p style="margin: 5px 0;"><strong>Ngân hàng:</strong> Vietcombank</p>
+            <p style="margin: 5px 0;"><strong>Số tài khoản:</strong> 1016613245</p>
+            <p style="margin: 5px 0;"><strong>Chủ TK:</strong> PHAN DAC LINH</p>
+        </div>
+    </section>
+
+    <footer style="padding: 40px; text-align: center; font-size: 0.8rem; opacity: 0.6;">
+        <p>© 2026 Made with ❤️ for Linh & Quỳnh</p>
+    </footer>
+
+</body>
+</html>
