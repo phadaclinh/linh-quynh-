@@ -36,69 +36,73 @@
             content: '';
             position: absolute;
             top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0,0,0,0.2);
+            background: rgba(0,0,0,0.15); /* Làm mờ cực nhẹ để thấy rõ video */
             z-index: -1;
         }
 
         .hero-box {
             text-align: center;
             color: var(--white);
-            padding: 40px;
-            background: rgba(255, 255, 255, 0.05); 
-            backdrop-filter: blur(3px);
-            border: 1px solid rgba(255, 255, 255, 0.15);
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.03); /* Siêu trong suốt */
+            backdrop-filter: blur(2px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 15px;
-            width: 90%;
-            max-width: 650px;
+            width: 95%;
+            max-width: 600px;
         }
 
-        .hero-sub { letter-spacing: 5px; text-transform: uppercase; font-size: 0.8rem; margin-bottom: 10px; opacity: 0.9; }
+        .hero-sub { letter-spacing: 5px; text-transform: uppercase; font-size: 0.75rem; margin-bottom: 5px; opacity: 0.9; }
         
+        /* Chỉnh tên thành 2 dòng */
         .hero h1 {
             font-family: 'Great Vibes', cursive;
-            font-size: clamp(3rem, 8vw, 5rem);
-            margin: 15px 0;
-            line-height: 1.2;
+            font-size: clamp(3.5rem, 10vw, 5.5rem);
+            line-height: 1.1;
             text-shadow: 2px 2px 15px rgba(0,0,0,0.4);
+            margin: 10px 0;
         }
+        .hero h1 span { display: block; }
+        .hero h1 em { font-style: normal; font-size: 0.6em; display: block; margin: -10px 0; }
 
         /* Countdown Gọn Gàng */
         .countdown {
             display: flex;
             justify-content: center;
             gap: 15px;
-            margin-top: 30px;
+            margin-top: 25px;
         }
 
-        .cd-item { width: 70px; text-align: center; }
+        .cd-item { width: 65px; text-align: center; }
         .cd-number { 
             display: block; 
-            font-size: 1.8rem; 
+            font-size: 1.6rem; 
             font-family: 'Playfair Display', serif; 
             font-weight: 700;
-            border-bottom: 1px solid rgba(255,255,255,0.25);
+            border-bottom: 1px solid rgba(255,255,255,0.2);
             padding-bottom: 5px;
         }
-        .cd-label { font-size: 0.6rem; text-transform: uppercase; letter-spacing: 1px; margin-top: 8px; display: block; opacity: 0.8; }
+        .cd-label { font-size: 0.55rem; text-transform: uppercase; letter-spacing: 1px; margin-top: 8px; display: block; opacity: 0.8; }
 
         /* Sections */
-        section { padding: 100px 20px; text-align: center; max-width: 1200px; margin: 0 auto; }
-        .section-header h2 { font-family: 'Playfair Display', serif; font-size: 2.5rem; color: var(--gold); margin-bottom: 50px; }
+        section { padding: 80px 20px; text-align: center; max-width: 1100px; margin: 0 auto; }
+        .section-header h2 { font-family: 'Playfair Display', serif; font-size: 2.2rem; color: var(--gold); margin-bottom: 40px; }
 
-        .event-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; }
-        .card { background: white; padding: 50px 30px; flex: 1; min-width: 320px; border-radius: 12px; box-shadow: 0 15px 40px rgba(0,0,0,0.05); }
-        .btn-map { display: inline-block; margin-top: 25px; padding: 12px 30px; background: var(--gold); color: white; text-decoration: none; font-size: 0.8rem; font-weight: 600; border-radius: 5px; }
+        .event-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 25px; }
+        .card { background: white; padding: 40px 25px; flex: 1; min-width: 300px; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); }
+        .btn-map { display: inline-block; margin-top: 20px; padding: 10px 25px; background: var(--gold); color: white; text-decoration: none; font-size: 0.75rem; font-weight: 600; border-radius: 4px; }
 
-        .gallery-wrap { display: grid; grid-template-columns: repeat(12, 1fr); gap: 15px; }
-        .gallery-img { width: 100%; height: 350px; object-fit: cover; border-radius: 8px; }
-        .g1 { grid-column: 1 / 13; height: 500px; } .g2 { grid-column: 1 / 7; } .g3 { grid-column: 7 / 13; }
+        .gallery-wrap { display: grid; grid-template-columns: repeat(12, 1fr); gap: 10px; }
+        .gallery-img { width: 100%; height: 300px; object-fit: cover; border-radius: 5px; }
+        .g1 { grid-column: 1 / 13; height: 450px; } .g2 { grid-column: 1 / 7; } .g3 { grid-column: 7 / 13; }
 
-        .bank-box { background: #fff; padding: 40px; display: inline-block; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
-        .qr-code { width: 220px; margin-bottom: 20px; border-radius: 10px; }
+        .bank-box { background: #fff; padding: 35px; display: inline-block; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.04); }
+        .qr-code { width: 200px; margin-bottom: 15px; border-radius: 8px; }
 
         @media (max-width: 768px) {
             .gallery-wrap { display: block; }
-            .gallery-img { margin-bottom: 15px; }
+            .gallery-img { margin-bottom: 10px; }
+            .hero-box { padding: 30px 10px; }
         }
     </style>
 </head>
@@ -110,8 +114,12 @@
         </video>
         <div class="hero-box" data-aos="zoom-in" data-aos-duration="1500">
             <p class="hero-sub">Save Our Date</p>
-            <h1>Đắc Linh & Ngọc Quỳnh</h1>
-            <p style="letter-spacing: 3px; font-weight: 300;">28 . 01 . 2026</p>
+            <h1>
+                <span>Đắc Linh</span>
+                <em>&</em>
+                <span>Ngọc Quỳnh</span>
+            </h1>
+            <p style="letter-spacing: 3px; font-weight: 300; margin-top: 10px;">28 . 01 . 2026</p>
             
             <div class="countdown">
                 <div class="cd-item"><span class="cd-number" id="days">00</span><span class="cd-label">Ngày</span></div>
@@ -158,14 +166,13 @@
         </div>
     </section>
 
-    <footer style="padding: 50px; background: #1a1a1a; color: #555; font-size: 0.7rem; letter-spacing: 3px;">
+    <footer style="padding: 40px; background: #1a1a1a; color: #555; font-size: 0.7rem; letter-spacing: 3px;">
         LINH & QUYNH © 2026
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({ duration: 1000, once: true });
-        // Cập nhật ngày đếm ngược thành 28/01/2026
         const weddingDate = new Date("Jan 28, 2026 09:00:00").getTime();
         setInterval(() => {
             const now = new Date().getTime();
